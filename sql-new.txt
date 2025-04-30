@@ -1,0 +1,190 @@
+INSERT INTO actions (id, nom_action, module_id, created_at, updated_at) VALUES
+(163, 'Exporter en excel la liste des magasins', 5, NOW(), NOW()),
+(164, 'Imprimer la liste des magasins', 5, NOW(), NOW()),
+(165, 'Imprimer la liste des fournisseurs', 6, NOW(), NOW()),
+(166, 'Exporter en excel la liste des categorie client', 6, NOW(), NOW()),
+(167, 'Imprimer la liste des categories clients', 6, NOW(), NOW()),
+(168, 'Imprimer la liste des clients', 6, NOW(), NOW()),
+(169, 'Voir le compte des clients', 6, NOW(), NOW()),
+(170, 'Exporter en excel les unité de comptage', 3, NOW(), NOW()),
+(171, 'Imprimer en pdf les unités de comptage', 3, NOW(), NOW()),
+(172, 'Historique de fixation des prix', 3, NOW(), NOW()),
+(173, 'Exporter en excel les prix des produits', 3, NOW(), NOW()),
+(174, 'Exporter au format d\'importation les prix des produits', 3, NOW(), NOW()),
+(175, 'Imprimer en pdf les prix', 3, NOW(), NOW()),
+(176, 'Importer la liste des emballages (excel)', 8, NOW(), NOW()),
+(177, 'Voir les impressions des proformas', 1, NOW(), NOW()),
+(178, 'Exporter en excel la liste des proformas', 1, NOW(), NOW()),
+(179, 'Imprimer en pdf la liste des proformas', 1, NOW(), NOW()),
+(180, 'Voir les impressions des factures', 1, NOW(), NOW()),
+(181, 'Exporter en excel la liste des factures', 1, NOW(), NOW()),
+(182, 'Imprimer en pdf la liste des factures', 1, NOW(), NOW()),
+(183, 'Voir les statistiques globales des factures', 1, NOW(), NOW()),
+(184, 'Exporter en excel les statistiques globales des factures', 1, NOW(), NOW()),
+(185, 'Imprimer en pdf les statistiques globales des factures', 1, NOW(), NOW()),
+(186, 'Voir les statistiques détaillees des factures', 1, NOW(), NOW()),
+(187, 'Exporter en excel les statistiques détaillees des factures', 1, NOW(), NOW()),
+(188, 'Imprimer en pdf les statistiques détaillees des factures', 1, NOW(), NOW()),
+(189, 'Voir les impressions des avoirs', 1, NOW(), NOW()),
+(190, 'Exporter en excel la liste des avoirs', 1, NOW(), NOW()),
+(191, 'Imprimer en pdf la liste des avoirs', 1, NOW(), NOW()),
+(192, 'Consignation sur la situation des clients', 8, NOW(), NOW()),
+(193, 'Regler une consignation', 8, NOW(), NOW()),
+(194, 'Regler une consignation entrée', 8, NOW(), NOW()),
+(195, 'Exporter reglement en excel', 4, NOW(), NOW()),
+(196, 'Voir les impressions des reglements', 4, NOW(), NOW()),
+(197, 'Exporter en excel la liste des reglements', 4, NOW(), NOW()),
+(198, 'Imprimer en pdf la liste des reglements', 4, NOW(), NOW()),
+(199, 'Voir les impressions des reglements sur periode', 4, NOW(), NOW()),
+(200, 'Exporter en excel la liste des reglements sur periode', 4, NOW(), NOW()),
+(201, 'Imprimer en pdf la liste des reglements sur periode', 4, NOW(), NOW()),
+(202, 'Voir les impressions des depenses', 9, NOW(), NOW()),
+(203, 'Voir les impressions des recettes', 9, NOW(), NOW()),
+(204, 'Exporter caisse en excel', 9, NOW(), NOW()),
+(205, 'Exporter caisse en pdf', 9, NOW(), NOW()),
+(206, 'Voir les impressions de dépense', 9, NOW(), NOW()),
+(207, 'Voir les impressions de recette', 9, NOW(), NOW()),
+(208, 'Voir les impressions de caisse', 9, NOW(), NOW()),
+(209, 'Voir les statistiques achats cumulees par mois', 7, NOW(), NOW()),
+(210, 'Imprimer le pdf de statistiques achats cumulees par mois', 7, NOW(), NOW()),
+(211, 'Exporter en excel de statistiques achats cumulees par mois', 7, NOW(), NOW()),
+(212, 'Voir les statistiques achats cumulees par categorie', 7, NOW(), NOW()),
+(213, 'Imprimer le pdf de statistiques achats cumulees par categorie', 7, NOW(), NOW()),
+(214, 'Exporter en excel de statistiques achats cumulees par categorie', 7, NOW(), NOW()),
+(215, 'Voir les statistiques achats cumulees par fournisseur', 7, NOW(), NOW()),
+(216, 'Imprimer le pdf de statistiques achats cumulees par fournisseur', 7, NOW(), NOW()),
+(217, 'Exporter en excel de statistiques achats cumulees par fournisseur', 7, NOW(), NOW()),
+(218, 'Voir les statistiques achats cumulees par agence', 7, NOW(), NOW()),
+(219, 'Imprimer le pdf de statistiques achats cumulees par agence', 7, NOW(), NOW()),
+(220, 'Exporter en excel de statistiques achats cumulees par agence', 7, NOW(), NOW()),
+(221, 'Voir les statistiques ventes par valeur cumulees par jour', 7, NOW(), NOW()),
+(222, 'Exporter en excel de statistiques ventes par valeur cumulees par jour', 7, NOW(), NOW()),
+(223, 'Imprimer le pdf de statistiques ventes par valeur cumulees par jour', 7, NOW(), NOW()),
+(224, 'Voir les statistiques ventes par valeur cumulees par categorie', 7, NOW(), NOW()),
+(225, 'Exporter en excel de statistiques ventes par valeur cumulees par categorie', 7, NOW(), NOW()),
+(226, 'Imprimer le pdf de statistiques ventes par valeur cumulees par categorie', 7, NOW(), NOW()),
+(227, 'Voir les statistiques ventes par valeur cumulees par client', 7, NOW(), NOW()),
+(228, 'Exporter en excel de statistiques ventes par valeur cumulees par client', 7, NOW(), NOW()),
+(229, 'Imprimer le pdf de statistiques ventes par valeur cumulees par client', 7, NOW(), NOW()),
+(230, 'Voir les statistiques ventes par valeur cumulees par produit', 7, NOW(), NOW()),
+(231, 'Exporter en excel de statistiques ventes par valeur cumulees par produit', 7, NOW(), NOW()),
+(232, 'Imprimer le pdf de statistiques ventes par valeur cumulees par produit', 7, NOW(), NOW());
+
+
+
+INSERT INTO actions (id, nom_action, module_id, created_at, updated_at) VALUES
+(236, 'Voir les statistiques ventes par valeur du journal des ventes', 7, NOW(), NOW()),
+(237, 'Exporter en excel les statistiques ventes par valeur des journaux des ventes', 7, NOW(), NOW()),
+(238, 'Imprimer les statistiques ventes par valeur des journaux des ventes', 7, NOW(), NOW()),
+
+(239, 'Voir les statistiques ventes par valeur des factures annulées et leur avoir', 7, NOW(), NOW()),
+(240, 'Exporter en excel de statistiques ventes par valeur des factures annulées et leur avoir', 7, NOW(), NOW()),
+(241, 'Imprimer le pdf de statistiques ventes par valeur des factures annulées et leur avoir', 7, NOW(), NOW()),
+
+(242, 'Voir les statistiques ventes par valeur des ventes par utilisateurs', 7, NOW(), NOW()),
+(243, 'Exporter en excel de statistiques ventes par valeur ventes par utilisateurs', 7, NOW(), NOW()),
+(244, 'Imprimer le pdf de statistiques ventes par valeur ventes par utilisateurs', 7, NOW(), NOW()),
+
+(245, 'Voir les statistiques des ventes par valeur', 7, NOW(), NOW()),
+(246, 'Voir les statistiques des ventes par quantité', 7, NOW(), NOW()),
+
+(247, 'Voir les statistiques ventes par quantité cumulées par catégorie', 7, NOW(), NOW()),
+(248, 'Exporter en excel de statistiques ventes par quantité cumulées par catégorie', 7, NOW(), NOW()),
+(249, 'Imprimer le pdf de statistiques ventes par quantité cumulées par catégorie', 7, NOW(), NOW()),
+
+(250, 'Voir les statistiques ventes par quantité cumulées par produit', 7, NOW(), NOW()),
+(251, 'Exporter en excel de statistiques ventes par quantité cumulées par produit', 7, NOW(), NOW()),
+(252, 'Imprimer le pdf de statistiques ventes par quantité cumulées par produit', 7, NOW(), NOW()),
+
+(253, 'Voir les statistiques stocks du magasin', 7, NOW(), NOW()),
+(254, 'Exporter en excel de statistiques stock du magasin', 7, NOW(), NOW()),
+(255, 'Imprimer le pdf de statistiques stock du magasin', 7, NOW(), NOW()),
+
+(256, 'Voir les statistiques stocks consolidé', 7, NOW(), NOW()),
+(257, 'Exporter en excel de statistiques stock consolidé', 7, NOW(), NOW()),
+(258, 'Imprimer le pdf de statistiques stock consolidé', 7, NOW(), NOW()),
+
+(259, 'Voir les statistiques stocks de la fiche stock consolidé', 7, NOW(), NOW()),
+(260, 'Exporter en excel de statistiques stock fiche stock consolidé', 7, NOW(), NOW()),
+(261, 'Imprimer le pdf de statistiques stock fiche stock consolidé', 7, NOW(), NOW()),
+
+(262, 'Voir les statistiques marge par valeur cumulées par produit', 7, NOW(), NOW()),
+(263, 'Exporter en excel de statistiques marge par valeur cumulées par produit', 7, NOW(), NOW()),
+(264, 'Imprimer le pdf de statistiques marge par valeur cumulées par produit', 7, NOW(), NOW()),
+
+(265, 'Voir les statistiques marge par valeur cumulées par jour', 7, NOW(), NOW()),
+(266, 'Exporter en excel de statistiques marge par valeur cumulées par jour', 7, NOW(), NOW()),
+(267, 'Imprimer le pdf de statistiques marge par valeur cumulées par jour', 7, NOW(), NOW()),
+
+(268, 'Voir les statistiques marge par valeur cumulées par mois', 7, NOW(), NOW()),
+(269, 'Exporter en excel de statistiques marge par valeur cumulées par mois', 7, NOW(), NOW()),
+(270, 'Imprimer le pdf de statistiques marge par valeur cumulées par mois', 7, NOW(), NOW()),
+
+(272, 'Voir les statistiques marge par valeur cumulées par client', 7, NOW(), NOW()),
+(273, 'Exporter en excel de statistiques marge par valeur cumulées par client', 7, NOW(), NOW()),
+(274, 'Imprimer le pdf de statistiques marge par valeur cumulées par client', 7, NOW(), NOW()),
+
+(275, 'Voir les statistiques rapport vente produit sans marge', 7, NOW(), NOW()),
+
+(276, 'Voir les statistiques rapport vente produit', 7, NOW(), NOW()),
+(277, 'Exporter en excel les statistiques rapport vente produit', 7, NOW(), NOW()),
+(278, 'Imprimer les statistiques rapport vente produit', 7, NOW(), NOW()),
+
+(279, 'Voir les statistiques rapport vente prestation', 7, NOW(), NOW()),
+(280, 'Exporter en excel les statistiques rapport vente prestation', 7, NOW(), NOW()),
+(281, 'Imprimer les statistiques rapport vente prestation', 7, NOW(), NOW()),
+
+(282, 'Exporter en excel les statistiques de relevé sortie', 7, NOW(), NOW()),
+(283, 'Imprimer en pdf les statistiques rapport vente prestation', 7, NOW(), NOW()),
+
+(284, 'Exporter en excel les statistiques de caisse', 7, NOW(), NOW()),
+(285, 'Imprimer les statistiques de caisse', 7, NOW(), NOW()),
+
+(286, 'Exporter en excel le stock produit', 5, NOW(), NOW()),
+(287, 'Exporter en excel le stock par emballage', 5, NOW(), NOW()),
+(288, 'Exporter en excel le stock au format d\'importation', 5, NOW(), NOW()),
+(289, 'Imprimer en pdf le stock', 5, NOW(), NOW()),
+(290, 'Imprimer en pdf le stock par emballage', 5, NOW(), NOW()),
+(291, 'Importer le stock produit', 5, NOW(), NOW()),
+
+(292, 'Historique du stock produit', 5, NOW(), NOW()),
+(293, 'Historique mise à jour import du stock produit', 5, NOW(), NOW()),
+(294, 'Voir les produits sous seuil du stock produit', 5, NOW(), NOW()),
+
+(295, 'Exporter en excel les entrées de produits', 5, NOW(), NOW()),
+(296, 'Importer les entrées de produits', 5, NOW(), NOW()),
+
+(297, 'Voir les impressions d\'entrée de produits', 5, NOW(), NOW()),
+(298, 'Exporter en excel les entrées de produits', 5, NOW(), NOW()),
+(299, 'Imprimer en pdf les entrées de produits', 5, NOW(), NOW()),
+
+(300, 'Exporter en excel la liste des sorties de produits', 5, NOW(), NOW()),
+(301, 'Exporter en excel la liste des impressions de sorties de produits', 5, NOW(), NOW()),
+(302, 'Imprimer en pdf la liste des impressions de sorties de produits', 5, NOW(), NOW()),
+
+(303, 'Exporter en excel la liste des impressions des inventaires de produits', 5, NOW(), NOW()),
+(304, 'Imprimer en pdf la liste des impressions des inventaires de produits', 5, NOW(), NOW());
+
+
+INSERT INTO actions (id, nom_action, module_id, created_at, updated_at) VALUES
+(305, 'Exporter en excel la liste des transferts de produits', 5, NOW(), NOW()),
+(306, 'Exporter en excel la liste des impressions de transferts de produits', 5, NOW(), NOW()),
+(307, 'Imprimer en pdf la liste des impressions de transferts de produits', 5, NOW(), NOW()),
+
+(308, 'Exporter au format d\'importation le stock emballage', 8, NOW(), NOW()),
+(309, 'Importer le stock emballage', 8, NOW(), NOW()),
+
+(310, 'Historique du stock emballage', 8, NOW(), NOW()),
+(311, 'Historique mise a jour du stock emballage', 8, NOW(), NOW()),
+
+(312, 'Voir la liste des impressions de stock emballage', 8, NOW(), NOW()),
+
+(313, 'Voir les impressions de sortie d\'emballage', 8, NOW(), NOW()),
+
+(314, 'Voir les impressions d\'inventaire emballage', 8, NOW(), NOW()),
+
+(315, 'Affectation de droit par utilisateur', 2, NOW(), NOW()),
+(316, 'Affectation de groupe aux utilisateurs', 2, NOW(), NOW()),
+
+(317, 'Voir et modifier les entete et pied de page excel', 2, NOW(), NOW()),
+(318, 'Voir et modifier les entete et pied de page pdf', 2, NOW(), NOW());

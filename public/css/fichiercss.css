@@ -1,0 +1,93 @@
+/* @font-face {
+    font-family: 'Open Sans';
+    src: url('../Open_Sans/static/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../Open_Sans/static/OpenSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+ */
+
+
+.Btndesign {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100px;
+    height: 40px;
+    border: none;
+    padding: 0px 20px;
+    background-color: #4326ff;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #3820d4;
+    transition-duration: .3s;
+  }
+
+  .svg {
+    width: 13px;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    fill: white;
+    transition-duration: .3s;
+  }
+
+  .Btndesign:hover {
+    color: transparent;
+  }
+
+  .Btndesign:hover svg {
+    right: 43%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    transition-duration: .3s;
+  }
+
+  .Btndesign:active {
+    transform: translate(3px , 3px);
+    transition-duration: .3s;
+    box-shadow: 2px 2px 0px #3c00b5;
+  }
+
+  /* --------------------------------- */
+  .styleBtnDownload {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    text-align: center;
+
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #4326ff;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #4326ff;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #4326ff;
+  }
+
+  .styleBtnDownload:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #4326ff;
+  }
+
+  .styleBtnDownload:active {
+    transform: scale(0.9);
+  }

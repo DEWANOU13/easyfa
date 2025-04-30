@@ -1,0 +1,149 @@
+INSERT INTO actions (id, nom_action, module_id, created_at, updated_at) VALUES
+(92, 'Voir les taxes', 1, NOW(), NOW()),
+(93, 'Créer une taxe', 1, NOW(), NOW()),
+(94, 'Modifier une taxe', 1, NOW(), NOW()),
+
+(95, 'Voir la liste des groupes de catégorie de produits', 3, NOW(), NOW()),
+(96, 'Creer un groupe categorie de produits', 3, NOW(), NOW()),
+(97, 'Modifier un groupe categorie de produits', 3, NOW(), NOW()),
+(98, 'Associer une catégorie à un groupe categorie de produits', 3, NOW(), NOW()),
+(99, 'Révoquer une association d\'une catégorie et d\'un groupe de catégorie de produit', 3, NOW(), NOW()),
+
+(100, 'Voir les rapports de statistique', 7, NOW(), NOW()),
+(101, 'Exporter en pdf les rapports de statistique', 7, NOW(), NOW()),
+(102, 'Exporter en excel les rapports de statistique', 7, NOW(), NOW()),
+
+(103, 'Voir les points de vente', 7, NOW(), NOW()),
+(104, 'Exporter en pdf les points de vente', 7, NOW(), NOW()),
+(105, 'Exporter en excel les points de vente', 7, NOW(), NOW());
+
+// -------------------------------------------------A partir d'ici en production------------------------------------------------- //
+
+// Nouveau code sql en production
+
+// Insertion d'un nouveau module
+INSERT INTO modules (id, nom_module, created_at, updated_at)
+VALUES (8, 'EMBALLAGES', NOW(), NOW());
+
+
+// Insertion des nouvelles actions
+INSERT INTO actions (id, nom_action, module_id, created_at, updated_at) VALUES
+(106, 'Voir la liste des catégories d\'emballage', 8, NOW(), NOW()),
+(107, 'Créer une categorie d\'emballages', 8, NOW(), NOW()),
+(108, 'Modifier une catégorie d\'emballage', 8, NOW(), NOW()),
+(109, 'Voir la liste des emballages', 8, NOW(), NOW()),
+(110, 'Créer un emballage', 8, NOW(), NOW()),
+(111, 'Modifier un emballage', 8, NOW(), NOW());
+
+
+// Nouveau code sql a copier
+
+// Insertion de nouvelles actions
+INSERT INTO actions (id, nom_action, module_id, created_at, updated_at)
+VALUES
+(112, 'Voir inventaire stock emballage', 8, NOW(), NOW()),
+(113, 'Exporter en pdf l\'inventaire des stocks d\'emballage', 8, NOW(), NOW()),
+(114, 'Exporter en excel l\'inventaire des stocks d\'emballage', 8, NOW(), NOW()),
+(115, 'Voir liste des entrées d\'emballage', 8, NOW(), NOW()),
+(116, 'Faire une entrée d\'emballage', 8, NOW(), NOW()),
+(117, 'Exporter en pdf les entrées d\'emballage', 8, NOW(), NOW()),
+(118, 'Exporter en excel les entrées d\'emballage', 8, NOW(), NOW()),
+(119, 'Voir liste des sorties d\'emballage', 8, NOW(), NOW()),
+(120, 'Faire une sortie d\'emballage', 8, NOW(), NOW()),
+(121, 'Imprimer en pdf les sorties d\'emballage', 8, NOW(), NOW()),
+(122, 'Exporter en excel les sorties d\'emballage', 8, NOW(), NOW()),
+(123, 'Voir la liste des inventaires', 8, NOW(), NOW()),
+(124, 'Faire un inventaire d\'emballage', 8, NOW(), NOW()),
+(125, 'Imprimer en pdf les inventaires d\'emballage', 8, NOW(), NOW()),
+(126, 'Exporter en excel les inventaires d\'emballage', 8, NOW(), NOW()),
+(127, 'Voir les transferts d\'emballage', 8, NOW(), NOW()),
+(128, 'Faire un transfert d\'emballage', 8, NOW(), NOW()),
+(129, 'Exporter en pdf les transferts d\'emballage', 8, NOW(), NOW()),
+(130, 'Exporter en excel les transferts d\'emballage', 8, NOW(), NOW());
+
+
+// Nouveau code sql a copier
+INSERT INTO actions (id, nom_action, module_id, created_at, updated_at) VALUES
+(51, 'Consulter la liste des approvisionnements', 5, NOW(), NOW()),
+(52, 'Effectuer un approvisionnement', 5, NOW(), NOW()),
+(53, 'Consulter la liste des réceptions d\'approvisionnements', 5, NOW(), NOW()),
+(54, 'Réceptionner un approvisionnement', 5, NOW(), NOW());
+
+
+// Encore du nouveau du nouveau code sql
+INSERT INTO actions (id, nom_action, module_id, created_at, updated_at) VALUES
+(131, 'Voir les consignations', 8, NOW(), NOW());
+
+// Encore du nouveau
+INSERT INTO actions (id, nom_action, module_id, created_at, updated_at) VALUES
+(132, 'Voir le seuil stock', 5, NOW(), NOW());
+
+
+// Des commandes à executer
+php artisan queue:table
+php artisan migrate
+php artisan queue:work
+
+
+----------------------------------------------------------------------------------------------
+
+// Insertion
+INSERT INTO actions (id, nom_action, module_id, created_at, updated_at) VALUES
+(133, 'Importer le prix des produits', 3, NOW(), NOW()),
+(134, 'Consulter la liste des acheminements', 5, NOW(), NOW()),
+(135, 'Effectuer un acheminement', 5, NOW(), NOW()),
+(136, 'Consulter la liste des réceptions d\'acheminement', 5, NOW(), NOW()),
+(137, 'Effectuer une réception d\'acheminement', 5, NOW(), NOW());
+
+INSERT INTO actions (id, nom_action, module_id, created_at, updated_at) VALUES
+(138, 'Consulter la liste des approvisionnements emballage', 8, NOW(), NOW()),
+(139, 'Effectuer un approvisionnement emballage', 8, NOW(), NOW()),
+(140, 'Consulter la liste des réceptions d\'approvisionnement emballage', 8, NOW(), NOW()),
+(141, 'Effectuer une réception d\'approvisionnement emballage', 8, NOW(), NOW()),
+
+(142, 'Consulter la liste des acheminements emballage', 8, NOW(), NOW()),
+(143, 'Effectuer un acheminement emballage', 8, NOW(), NOW()),
+(144, 'Consulter la liste des réceptions d\'acheminement emballage', 8, NOW(), NOW()),
+(145, 'Effectuer une réception d\'acheminement emballage', 8, NOW(), NOW());
+
+-----------------------------------------------------------------------------------------
+INSERT INTO actions (id, nom_action, module_id, created_at, updated_at) VALUES
+(146, 'Voir les entrées de consignation', 8, NOW(), NOW());
+
+
+--------------------------------------------------.--------------------------------------
+INSERT INTO actions (id, nom_action, module_id, created_at, updated_at) VALUES
+(147, 'Relevé des sorties de produits', 7, NOW(), NOW());
+
+
+-----------------------------------------------------------------------------------------
+// Insertion d'un nouveau module 'Caisse'
+INSERT INTO modules (id, nom_module, created_at, updated_at)
+VALUES (9, 'CAISSES', NOW(), NOW());
+
+
+// Insertion des actions du module caisse
+INSERT INTO actions (id, nom_action, module_id, created_at, updated_at) VALUES
+(148, 'Voir la liste des catégories de dépense', 9, NOW(), NOW()),
+(149, 'Créer une catégorie de dépense', 9, NOW(), NOW()),
+(150, 'Modifier une catégorie de dépense', 9, NOW(), NOW()),
+
+(151, 'Voir la liste des dépenses', 9, NOW(), NOW()),
+(152, 'Effectuer une nouvelle dépense', 9, NOW(), NOW()),
+
+(153, 'Voir la liste des catégories de recette', 9, NOW(), NOW()),
+(154, 'Créer une catégorie de recette', 9, NOW(), NOW()),
+(155, 'Modifier une catégorie de recette', 9, NOW(), NOW()),
+
+(156, 'Voir la liste des recettes', 9, NOW(), NOW()),
+(157, 'Effectuer une nouvelle recette', 9, NOW(), NOW()),
+
+(158, 'Voir la caisse', 9, NOW(), NOW()),
+(159, 'Ouvrir une nouvelle caisse', 9, NOW(), NOW()),
+(160, 'Fermer la caisse', 9, NOW(), NOW());
+
+
+-----------------------------------------------------------------------------------------
+INSERT INTO actions (id, nom_action, module_id, created_at, updated_at) VALUES
+(161, 'Statistique rapport de la caisse', 7, NOW(), NOW()),
+(162, 'Imprimer stock en pdf par catégorie', 5, NOW(), NOW());

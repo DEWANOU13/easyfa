@@ -1,0 +1,86 @@
+@if($texteEntetePied != null)
+<table>
+    <tr>
+        <td colspan="7" style="font-weight: bold; font-size: 15px; background-color: #3232df; text-align: center; color: white;">{{$texteEntetePied->entete}}</td>
+    </tr>
+</table>
+@endif
+<table>
+    <tr>
+        <td colspan="7" style="text-align: center; font-weight: bold; font-size:18px;">BORDEREAU APPROVISIONNEMENT EMBALLAGE
+        </td>
+    </tr>
+</table>
+@foreach ($appro_emballages as $approvisionnement)
+    <table>
+        <tr>
+            <td colspan="7" style="font-weight: bold; font-style: italic;">INFO</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold; font-style: italic; vertical-align: top;">Agence Destination&nbsp;:
+            </td>
+            <td>{{ $approvisionnement->NomAgence }}</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold; font-style: italic; vertical-align: top;">Date&nbsp;:</td>
+            <td>{{ \Carbon\Carbon::parse($approvisionnement->Date_Appro)->format('d/m/Y H:i') }}</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold; font-style: italic; vertical-align: top;">
+                Reférence&nbsp;:</td>
+            <td>{{ $approvisionnement->Reference_Appro_Emballage }}</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold; font-style: italic; vertical-align: top;">Vendeur&nbsp;:
+            </td>
+            <td>{{ $approvisionnement->name }}</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th style="width: 100px; background-color: #3232df;font-weight: bold; text-align: center; color: white; ">Reference</th>
+            <th style="width: 100px; background-color: #3232df;font-weight: bold; text-align: center; color: white; ">Désignation</th>
+            <th style="width: 100px; background-color: #3232df;font-weight: bold; text-align: center; color: white; ">Catégorie</th>
+            <th style="width: 100px; background-color: #3232df;font-weight: bold; text-align: center; color: white; ">Magasin</th>
+            <th style="width: 100px; background-color: #3232df;font-weight: bold; text-align: center; color: white; ">Qté_Approvisionnée</th>
+            <th style="width: 100px; background-color: #3232df;font-weight: bold; text-align: center; color: white; ">Qté_Réceptionnée</th>
+            <th style="width: 100px; background-color: #3232df;font-weight: bold; text-align: center; color: white; ">Reste_à_Receptionner</th>
+        </tr>
+        <tbody>
+            @foreach ($ligne_appro_emballages as $value)
+                <tr>
+                    <td>{{ $value->Reference }}</td>
+                    <td>{{ $value->Designation }}</td>
+                    <td>{{ $value->Libelle }}</td>
+                    <td>{{ $value->NomMagasin }}</td>
+                    <td>{{ $value->Qte_Approvisionnee }}</td>
+                    <td>{{ $value->Qte_Receptionnee }}</td>
+                    <td>{{ $value->Qte_Approvisionnee - $value->Qte_Receptionnee}}</td>
+                </tr>
+            @endforeach
+            <!-- Ajoutez ici plus de lignes avec des données -->
+        </tbody>
+    </table>
+@endforeach
+
+<table>
+    <tr>
+        <td colspan="7" style="font-weight: bold;text-align: right;">Imprimé par {{ Auth::user()->name }}</td>
+    </tr>
+    <tr>
+        <td colspan="7" style="font-weight: bold;text-align: right;">
+            {{ \Carbon\Carbon::now()->format('d/m/Y à H:i:s') }}</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td colspan="1"
+            style="font-weight: bold; background-color: #3232df;font-weight: bold; text-align: center; color: white;">
+            Editer par:</td>
+    </tr>
+    <tr>
+        <td colspan="1" style="font-weight: bold;text-align: center;">EASYFAC</td>
+    </tr>
+</table>
