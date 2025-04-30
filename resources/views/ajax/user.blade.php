@@ -26,6 +26,6 @@
     </tr>
 @empty
     <tr>
-        <td colspan = "4" class="text-center fw-bold">Aucun utilisateur trouvé</td>
+        <td colspan = "4" class="text-center fw-bold">Aucun utilisateur trouvee</td>
     </tr>
 @endforelse
